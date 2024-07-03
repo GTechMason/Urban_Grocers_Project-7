@@ -33,7 +33,6 @@ let requestBody = {
 "quantity": 2
 }]
 }
-
     try {
 		await fetch(`${config.API_URL}/api/v1/products/7`, {
 			method: 'PUT',
