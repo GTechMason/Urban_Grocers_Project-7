@@ -4,10 +4,10 @@ const config = require('../config');
 test('status code should be 404', async () => {
 	let actualStatus;
 	try {
-	  const response = await fetch(`${config.API_URL}/api/v1/kits/7`);
-	  actualStatus = response.status;
+		const response = await fetch(`${config.API_URL}/api/v1/kits/7`);
+	actualStatus = response.status;
 	} catch (error) {
-	  console.error(error);
+		console.error(error);
 	}
 	expect(actualStatus).toBe(404);
   });
