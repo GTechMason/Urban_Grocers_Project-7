@@ -13,7 +13,7 @@ expect(actualStatus).toBe(404);
 });
 
 test('delete kit', async () => {
-	try {
+try {
 const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
 method: 'DELETE',
 });
