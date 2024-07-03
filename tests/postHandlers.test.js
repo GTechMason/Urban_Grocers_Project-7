@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 const config = require('../config');
 
-test('checking courier delivery', async () => {
+test('should check courier delivery', async () => {
     const requestBody = {
         "products": [
             {
@@ -40,7 +40,7 @@ test('checking courier delivery', async () => {
     expect(actualStatus).toBe(200);
 });
 
-test('adding items to cart', async () => {
+test('should add items to cart', async () => {
     const requestBody = {
             "productsList": [
 {

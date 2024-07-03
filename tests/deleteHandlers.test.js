@@ -12,7 +12,7 @@ console.error(error);
 expect(actualStatus).toBe(404);
 });
 
-test('delete kit', async () => {
+test('should delete kit', async () => {
 try {
 const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
 method: 'DELETE',

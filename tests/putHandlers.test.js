@@ -47,7 +47,7 @@ throw error;
 }
 });
 
-test('changing price of item', async () => {
+test('should change price of item', async () => {
 let requestBody = {
 "price": 175
 }

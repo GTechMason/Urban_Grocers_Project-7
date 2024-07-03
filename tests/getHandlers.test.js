@@ -12,7 +12,7 @@ test('warehouse status should be 200', async () => {
   expect(actualStatus).toBe(200);
 });
 
-test('warehouse count greater than 0', async () => {
+test('warehouse count should be greater than 0', async () => {
   let response;
   try {
     response = await fetch(`${config.API_URL}/api/v1/warehouses`);
@@ -25,7 +25,7 @@ test('warehouse count greater than 0', async () => {
   }
 });
 
-test('warehouse has name and workingHours', async () => {
+test('warehouse should have name and workingHours', async () => {
   let response;
   try {
     response = await fetch(`${config.API_URL}/api/v1/warehouses`);
@@ -51,7 +51,7 @@ test('courier status should be 200', async () => {
   expect(actualStatus).toBe(200);
 });
 
-test('courier count greater than 0', async () => {
+test('courier count should be greater than 0', async () => {
   let response;
   try {
     response = await fetch(`${config.API_URL}/api/v1/couriers`);
@@ -64,7 +64,7 @@ test('courier count greater than 0', async () => {
   }
 });
 
-test('courier has name and workingHours', async () => {
+test('courier should have name and workingHours', async () => {
   let response;
   try {
     response = await fetch(`${config.API_URL}/api/v1/couriers`);
